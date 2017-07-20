@@ -5,85 +5,24 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="viewport" content="width=300, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
 <title>A Pizza Website</title>
-<script>
-$(document).ready(function(){
-    $("#botao0").click(function(){
-        $("#central").css("background-image", "url(pizza-left.png),url(pizza-right.png)");
-        $("#central").css("transform", "rotate(0deg)");
-    });
-    $("#botao1").click(function(){
-        $("#central").css("background-image", "url(pizza-left.png),url(pizza-right.png)");
-        $("#central").css("transform", "rotate(540deg)");
-    });
-    $("#botao2").click(function(){
-        $("#central").css("background-image", "url(pizza-left2.png),url(pizza-right.png)");
-        $("#central").css("transform", "rotate(900deg)");
-    });
-    $("#botao3").click(function(){
-        $("#central").css("background-image", "url(pizza-left.png),url(pizza-right2.png)");
-        $("#central").css("transform", "rotate(360deg)");
-    });
-});
-</script>
+<script src="animacao.js"></script>
 <style>
-body{
-background-color:olive;
-}
-/*************************/
-#central{
-width:480px;
-height:480px;
-border-radius:255px;
-border:solid red 20px;
-display:inline-block;
-background-image:url(pizza-left.png),url(pizza-right.png);
-background-repeat:no-repeat,no-repeat;
-background-position:left center,right center;
-background-size: 240px 480px,240px 480px;
-position:relative;
-top:-280px;
-left:-270px;
-transition:all 1s ease;
-}
-
-button{
-border:none;
-width:200px;
-height:40px;
-font-size:1.8em;
-position:relative;
-top:-250px;
-margin-bottom:2px;
-background-color: #4CAF50;
-color:red;
-text-shadow: 1px 1px #000000
-}
-
-button:hover{
-background-color: #669966;
-}
-
-#main{
-margin:auto;
-border:solid red 5px;
-max-width:300px;
-height:500px;
-overflow:hidden;
-}
-/*******************************/
-
 </style>
 </head>
 <body>
-<div id="main">
-<div class="element" id="central"></div>
-<br>
-<button id="botao0">Margherita</button>
-<br>
-<button id="botao1">Muzzarela</button><br>
-<button id="botao2">Pepperoni</button><br>
-<button id="botao3">Calabreza</button><br>
-</div>
+    <div id="main">
+        <div class="element" id="central"></div>
+        <br>
+        <div class="botoes">
+            <button id="botao0">Margherita</button><br>
+            <button id="botao1">Muzzarela</button><br>
+            <button id="botao2">Pepperoni</button><br>
+            <button id="botao3">Calabreza</button><br>
+        </div><!-- botoes -->
+        
+                
+    </div>
 </body>
 </html>
